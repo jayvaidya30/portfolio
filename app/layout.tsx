@@ -1,6 +1,15 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Source_Serif_4 } from 'next/font/google'
+
+const sourceSerif = Source_Serif_4({
+  subsets: ['latin'],
+  weight: ['200', '300', '400', '500', '600', '700', '800', '900'],
+  style: ['normal', 'italic'],
+  variable: '--font-source-serif',
+})
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,9 +32,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={sourceSerif.variable}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+         className="font-serif"
       >
         {children}
       </body>
