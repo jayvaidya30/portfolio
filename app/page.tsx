@@ -1,5 +1,7 @@
 import Image from "next/image";
 import SkillsSection from "./components/SkillsSection";
+import ProjectCard from "./components/ProjectCard";
+import { Project, ProjectStatus } from "./types";
 
 interface Links {
   title: string;
@@ -22,10 +24,21 @@ export default function Home() {
     },
   ];
 
+  const Project: Project = {
+    id: "1",
+    title: "Sourcd",
+    description: "This is a sample project description",
+    imageUrl: "/sourd-site.webp",
+    status: ProjectStatus.Live,
+    repoUrl: "https://github.com",
+    demoUrl: "https://example.com",
+    tags: ["React", "TypeScript"],
+  };
+
   return (
-    <main className="w-full">
-      <section className="min-h-screen">
-        <div className="fixed top-0 left-0 w-full z-50 bg-black">
+    <main className="w-full ">
+      <section className="min-h-screen bg-linear-to-t from-neutral-900 to-transparent">
+        <div className="fixed top-0 left-0 w-full z-50 bg-black ">
           <div className="flex font-mono font-medium text-2xl justify-around items-center py-5 border border-b-neutral-800 border-t-0 border-l-0 border-r-0  ">
             {/* navbar */}
             <div>Jay.</div>
@@ -45,7 +58,7 @@ export default function Home() {
 
         {/* Main Content / Name */}
 
-        <div className="flex items-center justify-center px-5 gap-2 mt-30 ">
+        <div className="flex items-center justify-center px-5 gap-2 py-30 ">
           <div className=" flex flex-col max-w-4xl gap-5">
             <div className="flex">
               <Image
@@ -170,9 +183,22 @@ export default function Home() {
             <div className="flex flex-wrap items-center gap-2">
               <SkillsSection />
             </div>
+
+            {/* Projects section */}
+
+            <h1 className="text-3xl font-serif font-medium">~ % ls Projects</h1>
+
+            <p className="text-xl text-neutral-500 font-medium ">
+              Where execution and excellence is tested
+            </p>
+            <ProjectCard project={Project} />
+
           </div>
+
         </div>
       </section>
     </main>
   );
 }
+
+
