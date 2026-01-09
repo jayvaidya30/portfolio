@@ -1,7 +1,5 @@
 import Image from "next/image";
-import Skills from "./components/Skills";
-import ReactJs from "@/icons/ReactJs";
-import NextJs from "@/icons/NextJs";
+import SkillsSection from "./components/SkillsSection";
 
 interface Links {
   title: string;
@@ -170,10 +168,7 @@ export default function Home() {
               ~ % ls Skills / Tools
             </h1>
             <div className="flex flex-wrap items-center gap-2">
-              <Skills icon={<ReactJs />} label="ReactJs"/>
-              <Skills icon={<NextJs />} label="NextJs"/>
-
-              
+              <SkillsSection />
             </div>
           </div>
         </div>
