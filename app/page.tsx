@@ -172,6 +172,8 @@ export default function Home() {
             <div className="flex flex-wrap items-center gap-2">
               <Skills icon={<ReactJs />} label="ReactJs"/>
               <Skills icon={<NextJs />} label="NextJs"/>
+
+              
             </div>
           </div>
         </div>
