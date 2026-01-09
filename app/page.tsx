@@ -1,4 +1,7 @@
 import Image from "next/image";
+import Skills from "./components/Skills";
+import ReactJs from "@/icons/ReactJs";
+import NextJs from "@/icons/NextJs";
 
 interface Links {
   title: string;
@@ -44,7 +47,7 @@ export default function Home() {
 
         {/* Main Content / Name */}
 
-        <div className="flex items-center justify-center px-5 gap-2 mt-55 ">
+        <div className="flex items-center justify-center px-5 gap-2 mt-30 ">
           <div className=" flex flex-col max-w-4xl gap-5">
             <div className="flex">
               <Image
@@ -79,7 +82,7 @@ export default function Home() {
 
             <div className="flex flex-wrap items-center gap-2">
               <a
-                className="flex justify-center items-center gap-2 border border-neutral-700 bg-neutral-900 rounded-lg px-2 py-2"
+                className="flex justify-center items-center gap-2 border border-neutral-700 bg-neutral-900 rounded-lg px-2 py-1.5"
                 href=""
               >
                 <svg
@@ -97,7 +100,7 @@ export default function Home() {
               </a>
 
               <a
-                className="flex justify-center items-center gap-2 border border-neutral-700 bg-neutral-900 rounded-lg px-2 py-2"
+                className="flex justify-center items-center gap-2 border border-neutral-700 bg-neutral-900 rounded-lg px-2 py-1.5"
                 href=""
               >
                 <svg
@@ -115,7 +118,7 @@ export default function Home() {
               </a>
 
               <a
-                className="flex justify-center items-center gap-2 border border-neutral-700 bg-neutral-900 rounded-lg px-2 py-2"
+                className="flex justify-center items-center gap-2 border border-neutral-700 bg-neutral-900 rounded-lg px-2 py-1.5"
                 href=""
               >
                 <svg
@@ -144,7 +147,7 @@ export default function Home() {
             </p>
 
             <a
-              className="flex max-w-28 py-2 px-1 justify-center items-center gap-2 border border-neutral-700 bg-neutral-900 rounded-lg "
+              className="flex max-w-28 py-1.5 px-1 justify-center items-center gap-2 border border-neutral-700 bg-neutral-900 rounded-lg "
               href=""
             >
               <svg
@@ -161,14 +164,14 @@ export default function Home() {
               Hire Me
             </a>
 
-            {/* Projects */}
+            {/* Skills and Tools */}
 
-            <h1 className="text-3xl font-serif font-medium">~ % ls Projects</h1>
+            <h1 className="text-3xl font-serif font-medium">
+              ~ % ls Skills / Tools
+            </h1>
             <div className="flex flex-wrap items-center gap-2">
-
-
-
-              
+              <Skills icon={<ReactJs />} label="ReactJs"/>
+              <Skills icon={<NextJs />} label="NextJs"/>
             </div>
           </div>
         </div>
