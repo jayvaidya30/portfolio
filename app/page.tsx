@@ -30,7 +30,7 @@ export default function Home() {
       title: "Sourcd FE",
       description:
         "Sourcd is an open-source platform where people can discover, share, and curate high-quality resources — articles, tools, videos, repositories, and more. Built with modern web technologies and designed to be simple, fast, and community-driven.",
-      imageUrl: "/sourd-site.webp",
+      imageUrl: "/sourcd-frontend.svg",
       status: ProjectStatus.Building,
       repoUrl: "https://github.com/jayvaidya30/sourcd-web",
       demoUrl: "",
@@ -41,7 +41,7 @@ export default function Home() {
       title: "Sourcd BE",
       description:
         "Sourcd is an open-source platform where people can discover, share, and curate high-quality resources — articles, tools, videos, repositories, and more. Built with modern web technologies and designed to be simple, fast, and community-driven.",
-      imageUrl: "/sourd-site.webp",
+      imageUrl: "/sourcd-backend.svg",
       status: ProjectStatus.Building,
       repoUrl: "https://github.com/jayvaidya30/sourcd-api",
       demoUrl: "",
@@ -52,7 +52,7 @@ export default function Home() {
       title: "Drawly",
       description:
         "A simple, collaborative drawing app for creating hand-drawn style diagrams, wireframes, and sketches in real time.",
-      imageUrl: "/sourd-site.webp",
+      imageUrl: "/drawly.svg",
       status: ProjectStatus.Maintenance,
       repoUrl: "https://github.com/jayvaidya30/drawly",
       demoUrl: "",
@@ -73,7 +73,7 @@ export default function Home() {
       title: "Brain-FE",
       description:
         "A modern React + TypeScript frontend built with Vite for a “Second Brain” knowledge management system.",
-      imageUrl: "/sourd-site.webp",
+      imageUrl: "/second-brain-fe.svg",
       status: ProjectStatus.Maintenance,
       repoUrl: "https://github.com/jayvaidya30/Second-Brain-Frontend",
       demoUrl: "",
@@ -84,7 +84,7 @@ export default function Home() {
       title: "Brain-BE",
       description:
         "Second-Brain is a TypeScript-based backend built with Express and MongoDB, providing APIs for secure data storage and retrieval using JWT authentication.",
-      imageUrl: "/sourd-site.webp",
+      imageUrl: "/second-brain-be.svg",
       status: ProjectStatus.Maintenance,
       repoUrl: "https://github.com/jayvaidya30/Second-Brain",
       demoUrl: "",
@@ -95,7 +95,7 @@ export default function Home() {
       title: "Chat-app",
       description:
         "chat-app is a TypeScript-based real-time chat application built using WebSockets for instant messaging between users.",
-      imageUrl: "/sourd-site.webp",
+      imageUrl: "/chat-app.svg",
       status: ProjectStatus.Maintenance,
       repoUrl: "https://github.com/jayvaidya30/chat-app",
       demoUrl: "",
@@ -338,14 +338,14 @@ export default function Home() {
         </div>
 
         <div className="w-full z-50 bg-neutral-900 ">
-          <div className="flex font-mono text-xl justify-around items-center py-4 border border-t-neutral-800 border-b-0 border-l-0 border-r-0  ">
+          <div className="flex font-mono text-lg justify-around items-center py-4 border border-t-neutral-800 border-b-0 border-l-0 border-r-0  ">
             <div className="flex gap-2 ">
               <h1 className="text-neutral-500"> Copyright 2026</h1>
               <Image
                 src={"/copyright.svg"}
                 alt="Copyright Symbol"
-                width={18}
-                height={18}
+                width={17}
+                height={17}
               />
               Jay Vaidya
             </div>
