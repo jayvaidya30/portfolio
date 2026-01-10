@@ -24,3 +24,48 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+a {
+  background: #111;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  overflow: hidden;
+
+  text-decoration: none;
+
+  transition: all 0.5s ease;
+}
+
+/* holographic sweep */
+a::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent 30%,
+    rgb(15, 40, 84)
+  );
+  transform: rotate(-45deg);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgb(15, 40, 84)
+}
+
+a:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
