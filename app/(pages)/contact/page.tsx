@@ -4,7 +4,6 @@ import Image from "next/image";
 export default function Contact() {
   return (
     <>
-      <Navbar />
       <div className=" flex items-center justify-center px-5 gap-2 pt-30 pb-35">
         <div className="flex flex-col max-w-3xl gap-5">
           <h1 className="text-3xl font-serif font-medium">~ ls Contact</h1>

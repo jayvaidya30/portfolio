@@ -11,7 +11,7 @@ export default function Home() {
 
         {/* Main Content / Name */}
 
-        <div className="flex items-center justify-center px-5 gap-2 py-30 ">
+        <div className="flex items-center justify-center px-5 gap-2 pt-15 pb-30 ">
           <MainContent />
         </div>
 
@@ -20,3 +20,6 @@ export default function Home() {
     </main>
   );
 }
+
+
+// remove navbar and add new svgs on the project

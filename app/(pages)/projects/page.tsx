@@ -20,7 +20,7 @@ const ProjectSection = () => {
   return (
     <>
       <div className="flex flex-col max-w-5xl gap-5">
-        <h1 className="text-3xl font-serif font-medium">~ % ls Projects</h1>
+        <h1 className="text-3xl font-serif font-medium">~ ls Projects</h1>
 
         <p className="text-xl text-neutral-500 font-medium ">
           Where execution and excellence is tested

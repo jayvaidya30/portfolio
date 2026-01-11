@@ -3,11 +3,12 @@ import { StatusBadge2 } from "./StatusBadge2";
 import SkillsSection from "./SkillsSection";
 import ProjectCard from "./ProjectCard";
 import Project from "@/app/constants";
+import StatusBadge from "./StatusBadge";
 
 export default function MainContent() {
   return (
     <>
-      <div className=" flex flex-col max-w-5xl gap-5">
+      <div className=" flex flex-col max-w-4xl gap-5">
         <div className="flex">
           <Image
             src="pfp.svg"
@@ -16,13 +17,13 @@ export default function MainContent() {
             height={100}
             className="rounded-xl"
           ></Image>
-          <div className=" flex justify-center items-center mt-17 gap-3 ml-3 text-xl text-neutral-500">
-            <StatusBadge2 />
-          </div>
+          <div className="flex flex-col ml-3 mt-17 items-center gap-2">
+        <StatusBadge variant="green" />
+      </div>
         </div>
 
         <h1 className="text-3xl font-serif font-medium">
-          ~ % sudo Jay VaidyaVaidya
+          ~ sudo Jay Vaidya
         </h1>
         <p className="text-xl font-medium ">
           I'm Jay Vaidya and here I document everything happening in my tech
@@ -33,7 +34,7 @@ export default function MainContent() {
           maintainable code and diving deep into security to understand the
           internet from the ground up
         </p>
-        <h1 className="text-3xl font-serif font-medium">~ % Reach out to me</h1>
+        <h1 className="text-2xl font-serif font-medium">~ Reach out to me</h1>
 
         <div className="flex flex-wrap items-center gap-2">
           <a
@@ -105,7 +106,7 @@ export default function MainContent() {
           </a>
         </div>
 
-        <h1 className="text-3xl font-serif font-medium">~ % Hire Me</h1>
+        <h1 className="text-2xl font-serif font-medium">~ Hire Me</h1>
 
         <p className="text-xl text-neutral-500 font-medium ">
           I'm currently available for internships, full-time opportunities, and
@@ -133,8 +134,8 @@ export default function MainContent() {
 
         {/* Skills and Tools */}
 
-        <h1 className="text-3xl font-serif font-medium">
-          ~ % ls Skills / Tools
+        <h1 className="text-2xl font-serif font-medium">
+          ~ ls Skills / Tools
         </h1>
         <div className="flex flex-wrap items-center gap-2">
           <SkillsSection />
@@ -142,7 +143,7 @@ export default function MainContent() {
 
         {/* Projects section */}
 
-        <h1 className="text-3xl font-serif font-medium">~ % ls Projects</h1>
+        <h1 className="text-2xl font-serif font-medium">~ ls Projects</h1>
 
         <p className="text-xl text-neutral-500 font-medium ">
           Where execution and excellence is tested

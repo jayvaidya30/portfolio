@@ -10,13 +10,13 @@ export default function AboutPage() {
   return (
     <>
       <div className=" flex flex-col max-w-3xl gap-5">
-        <h1 className="text-3xl font-serif font-medium">~ % About Me</h1>
+        <h1 className="text-2xl font-serif font-medium">~ About Me</h1>
         <p className="text-xl text-neutral-500 font-medium ">
           Full-stack engineer and cracked developer obsessed with clean,
           maintainable code and diving deep into security to understand the
           internet from the ground up
         </p>
-        <h1 className="text-3xl font-serif font-medium">~ % Tech Stack</h1>
+        <h1 className="text-2xl font-serif font-medium">~ Tech Stack</h1>
 
         <div className="flex flex-wrap items-center gap-2">
           <SkillsText />
