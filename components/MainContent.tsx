@@ -2,8 +2,8 @@ import Image from "next/image";
 import { StatusBadge2 } from "./StatusBadge2";
 import SkillsSection from "./SkillsSection";
 import ProjectCard from "./ProjectCard";
-import { ProjectStatus } from "../types";
-import type { Project } from "../types";
+import { ProjectStatus } from "../app/types";
+import type { Project } from "../app/types";
 
 const Project: Project[] = [
   {

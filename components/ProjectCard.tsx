@@ -1,6 +1,6 @@
 import React from "react";
 import { ExternalLink } from "lucide-react";
-import { Project, ProjectStatus } from "../types";
+import { Project, ProjectStatus } from "../app/types";
 
 interface ProjectCardProps {
   project: Project;
