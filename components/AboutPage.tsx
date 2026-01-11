@@ -3,38 +3,24 @@ import { StatusBadge2 } from "./StatusBadge2";
 import SkillsSection from "./SkillsSection";
 import ProjectCard from "./ProjectCard";
 import Project from "@/app/constants";
+import Skills from "./Skills";
+import SkillsText from "./SkillsText";
 
-export default function MainContent() {
+export default function AboutPage() {
   return (
     <>
-      <div className=" flex flex-col max-w-5xl gap-5">
-        <div className="flex">
-          <Image
-            src="pfp.svg"
-            alt="Profile picture"
-            width={100}
-            height={100}
-            className="rounded-xl"
-          ></Image>
-          <div className=" flex justify-center items-center mt-17 gap-3 ml-3 text-xl text-neutral-500">
-            <StatusBadge2 />
-          </div>
-        </div>
-
-        <h1 className="text-3xl font-serif font-medium">
-          ~ % sudo Jay VaidyaVaidya
-        </h1>
-        <p className="text-xl font-medium ">
-          I'm Jay Vaidya and here I document everything happening in my tech
-          career
-        </p>
+      <div className=" flex flex-col max-w-3xl gap-5">
+        <h1 className="text-3xl font-serif font-medium">~ % About Me</h1>
         <p className="text-xl text-neutral-500 font-medium ">
           Full-stack engineer and cracked developer obsessed with clean,
           maintainable code and diving deep into security to understand the
           internet from the ground up
         </p>
-        <h1 className="text-3xl font-serif font-medium">~ % Reach out to me</h1>
+        <h1 className="text-3xl font-serif font-medium">~ % Tech Stack</h1>
 
+        <div className="flex flex-wrap items-center gap-2">
+          <SkillsText />
+        </div>
         <div className="flex flex-wrap items-center gap-2">
           <a
             className="flex justify-center items-center gap-2 border border-neutral-700 bg-neutral-900 rounded-lg px-2 py-1.5"
@@ -103,54 +89,6 @@ export default function MainContent() {
             </svg>
             Email
           </a>
-        </div>
-
-        <h1 className="text-3xl font-serif font-medium">~ % Hire Me</h1>
-
-        <p className="text-xl text-neutral-500 font-medium ">
-          I'm currently available for internships, full-time opportunities, and
-          freelance projects. If you're looking for someone passionate, skilled,
-          and ready to contribute, I'm here to help bring your ideas to life!
-        </p>
-
-        <a
-          className="flex max-w-28 py-1.5 px-1 justify-center items-center gap-2 border border-neutral-700 bg-neutral-900 rounded-lg "
-          href="mailto:jayvaidya30@gmail.com"
-        >
-          <svg
-            stroke="currentColor"
-            fill="currentColor"
-            strokeWidth="0"
-            viewBox="0 0 256 256"
-            height="1em"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M216,48H180V40a28,28,0,0,0-28-28H104A28,28,0,0,0,76,40v8H40A20,20,0,0,0,20,68V196a20,20,0,0,0,20,20H216a20,20,0,0,0,20-20V68A20,20,0,0,0,216,48ZM100,40a4,4,0,0,1,4-4h48a4,4,0,0,1,4,4v8H100ZM212,72v64H44V72ZM44,192V160H212v32Z"></path>
-          </svg>
-          Hire Me
-        </a>
-
-        {/* Skills and Tools */}
-
-        <h1 className="text-3xl font-serif font-medium">
-          ~ % ls Skills / Tools
-        </h1>
-        <div className="flex flex-wrap items-center gap-2">
-          <SkillsSection />
-        </div>
-
-        {/* Projects section */}
-
-        <h1 className="text-3xl font-serif font-medium">~ % ls Projects</h1>
-
-        <p className="text-xl text-neutral-500 font-medium ">
-          Where execution and excellence is tested
-        </p>
-        <div className="flex flex-wrap gap-4">
-          {Project.map((Project) => (
-            <ProjectCard key={Project.id} project={Project} />
-          ))}
         </div>
       </div>
     </>
