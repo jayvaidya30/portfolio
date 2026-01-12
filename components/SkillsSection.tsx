@@ -46,7 +46,7 @@ export default function SkillsSection() {
       <Skills icon={<Tailwind />} label="Tailwind" />
       <Skills icon={<Typescript />} label="TypeScript" />
       <Skills icon={<Vercel />} label="Vercel" />
-      <Skills icon={<Zustland />} label="Zustland" />
+      <Skills icon={<Zustland />} label="Zustand" />
     </>
   );
 }
